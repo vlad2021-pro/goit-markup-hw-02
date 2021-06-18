@@ -110,12 +110,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 .team-professional {
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 /* Вutton  */
@@ -142,7 +144,25 @@ body {
   line-height: 16px;
   letter-spacing: 1.14;
 }
+.logo-footer {
+  color: var(--accent-color);
 
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-footer :hover {
+  color: var(--accent-color);
+}
+.logo-white {
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+}
 .address {
   color: #fff;
   font-weight: 400;
@@ -151,9 +171,14 @@ body {
 }
 /* Портфолио */
 /* Навигация страницы портфолио */
+
 .nav-portfolio,
 .nav {
-  color: #212121;
+  color: var(--primary-texr-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .nav-portfolio .nav:hover,
 .nav-portfolio .nav:focus {
