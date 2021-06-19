@@ -9,10 +9,14 @@
   --primary-texr-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
+  --white-color: #fff;
+  --black-color: #000000;
+  --color-baner: #2f303a;
+  --current-fon-color: #f5f4fa;
 }
 body {
-  color: #757575;
-  background-color: #fff;
+  color: var(--title-text-color);
+  background-color: var(--white-color);
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -32,7 +36,7 @@ body {
   color: var(--accent-color);
 }
 .logo-black {
-  color: black;
+  color: var(--black-color);
   font-family: Raleway;
   font-weight: 400;
   font-size: 26px;
@@ -54,8 +58,6 @@ body {
   color: var(--accent-color);
 }
 /* Contact-list  для индекса и портфолио*/
-.contacts {
-}
 
 .contacts-link:hover,
 .contacts-link:focus {
@@ -64,23 +66,29 @@ body {
 
 .contacts-link {
   color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* ***Блок-герой*** */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--color-baner);
 }
 .hero-title {
-  color: #fff;
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* Section */
 .section-title {
-  color: #212121;
+  color: var(--primary-texr-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -93,17 +101,18 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .features-list {
-  color: #757575;
+  color: var(--title-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
 /* Team-list */
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--current-fon-color);
 }
 .team-list {
   color: var(--primary-texr-color);
@@ -122,7 +131,7 @@ body {
 
 /* Вutton  */
 .button {
-  color: #fff;
+  color: var(--white-color);
   background-color: var(--accent-color);
   font-family: inherit;
 
@@ -137,7 +146,7 @@ body {
 }
 /* Footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--color-baner);
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -157,14 +166,15 @@ body {
   color: var(--accent-color);
 }
 .logo-white {
-  color: #fff;
+  color: var(--white-color);
   font-family: Raleway;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.19;
 }
 .address {
-  color: #fff;
+  color: var(--white-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -184,7 +194,9 @@ body {
 .nav-portfolio .nav:focus {
   color: var(--accent-color);
 }
-
+.nav-portfolio .nav-current {
+  color: var(--accent-color);
+}
 /* .section-portfolio */
 .section-portfolio {
   color: var(--primary-texr-color);
@@ -206,40 +218,14 @@ body {
 /* Button-portfolio */
 .button-portfolio .button {
   color: var(--primary-texr-color);
-  background-color: #f5f4fa;
+  background-color: var(--current-fon-color);
   font-family: inherit;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
 }
-.button-portfolio .button:hover {
-  color: #fff;
+.button-portfolio .button-current:hover {
+  color: var(--white-color);
   background-color: var(--accent-color);
-}
-.button-portfolio .all {
-  color: #fff;
-  background-color: var(--accent-color);
-  width: 73px;
-  height: 38px;
-  left: 495px;
-  top: 174px;
-}
-.button-portfolio .web {
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
-}
-.button-portfolio .design {
-  width: 145px;
-  height: 38px;
-  left: 712px;
-  top: 174px;
-}
-.button-portfolio .marketing {
-  width: 130px;
-  height: 38px;
-  left: 976px;
-  top: 174px;
 }
