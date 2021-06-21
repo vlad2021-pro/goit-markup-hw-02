@@ -226,14 +226,25 @@ body {
 }
 
 /* примеры работ */
+.work-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .examples {
   color: var(--primary-texr-color);
+  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
 .examples-list {
   color: var(--title-text-color);
+  font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
