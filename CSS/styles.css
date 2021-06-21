@@ -30,6 +30,7 @@ body {
   font-weight: 400;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 
 .logo :hover {
@@ -49,6 +50,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -71,6 +73,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 /* ***Блок-герой*** */
@@ -131,18 +134,23 @@ body {
 
 /* Вutton  */
 .button {
+  display: inline-block;
+  border-radius: 4px;
   color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--accent-color);
   font-family: inherit;
+  padding: 10px 32px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 /* Footer */
 .footer {
@@ -153,6 +161,7 @@ body {
   line-height: 16px;
   letter-spacing: 1.14;
 }
+
 .logo-footer {
   color: var(--accent-color);
 
@@ -160,6 +169,7 @@ body {
   font-weight: 400;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 
 .logo-footer :hover {
@@ -179,6 +189,16 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
+.contacts-footer {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
 /* Портфолио */
 /* Навигация страницы портфолио */
 
@@ -189,13 +209,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .nav-portfolio .nav:hover,
 .nav-portfolio .nav:focus {
   color: var(--accent-color);
+  text-decoration: none;
 }
 .nav-portfolio .nav-current {
   color: var(--accent-color);
+  text-decoration: none;
 }
 /* .section-portfolio */
 .section-portfolio {
@@ -216,11 +239,10 @@ body {
   line-height: 1.8;
 }
 /* Button-portfolio */
-.button-portfolio .button {
+.button-portfolio .button-current {
   color: var(--primary-texr-color);
   background-color: var(--current-fon-color);
   font-family: inherit;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
